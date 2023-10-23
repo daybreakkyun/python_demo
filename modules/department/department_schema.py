@@ -9,6 +9,7 @@ class DepartmentSchema(SQLAlchemyAutoSchema):
         model = Department
         load_instance = True
     name = fields.Str(required=True)
+    description = fields.Str(required=False)
     code = EnumField(DepartmentCode, by_value=True, required=True)
     persons = fields.List(
         fields.Nested(

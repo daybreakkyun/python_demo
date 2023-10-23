@@ -1,11 +1,15 @@
 from shared import exception_handler, sql_engine
 from modules.person import person_route
 from modules.department import department_route
+from flask_migrate import Migrate
 
 app = sql_engine.create_app()
 
 with app.app_context():
     sql_engine.db.create_all()
+
+db = sql_engine.db
+migrate = Migrate(app, db)
 
 #init API templates
 app.register_blueprint(person_route.api)

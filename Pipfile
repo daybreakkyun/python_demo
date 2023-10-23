@@ -11,6 +11,7 @@ marshmallow-sqlalchemy = "*"
 mysqlclient = "*"
 mysql-connector-python = "*"
 marshmallow-enum = "*"
+flask-migrate = "*"
 
 [dev-packages]
 
