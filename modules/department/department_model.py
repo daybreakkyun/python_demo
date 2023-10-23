@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Enum
-from shared.sql_engine import db
+from shared.engine import db
 import enum
 
 class DepartmentCode(enum.Enum):

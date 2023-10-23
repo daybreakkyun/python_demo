@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Date, Enum, ForeignKey
-from shared.sql_engine import db
+from shared.engine import db
 import enum
 
 class Gender(enum.Enum):

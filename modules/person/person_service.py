@@ -1,6 +1,6 @@
 from modules.person import person_schema
 from modules.person.person_model import Person
-from shared.sql_engine import db
+from shared.engine import db
 from shared.custom_exception import EntityNotFound
 
 def find_all():

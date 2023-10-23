@@ -12,6 +12,7 @@ mysqlclient = "*"
 mysql-connector-python = "*"
 marshmallow-enum = "*"
 flask-migrate = "*"
+flask-restx = "*"
 
 [dev-packages]
 
